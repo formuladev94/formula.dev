@@ -1,0 +1,66 @@
+{
+"pilotos": [
+{
+"id": 1,
+"name": "Lando Norris",
+"descripcion_corta": "McLaren Formula 1 Team",
+"contenido_completo": "Es un piloto británico de Fórmula 1 que se consagró campeón del mundo en la temporada 2025 con el equipo McLaren. Nacido el 13 de noviembre de 1999, comenzó su carrera en el karting a los 7 años y debutó en la F1 en 2019. ",
+"imagen":"assets/lando.png"
+ },
+ {
+ "id": 2,
+"name": "Max Verstappen",
+"descripcion_corta": "Oracle Red Bull Racing",
+"contenido_completo": "Próximamente más información sobre este piloto.",
+"imagen": "assets/max.jpg"
+},
+{
+ "id": 3,
+"name": "Oscar Piastri",
+"descripcion_corta": "McLaren Formula 1 Team",
+"contenido_completo": "Próximamente más información sobre este piloto.",
+"imagen": "assets/piastri.png"
+},
+
+{
+"id": 4,
+"name": "George Russell",
+"descripcion_corta": "Mercedes-AMG Petronas Formula One Team",
+"contenido_completo": "Próximamente más información sobre este piloto.",
+"imagen":"assets/george.png"
+},
+
+{
+"id": 5,
+"name": "Charles Leclerc",
+"descripcion_corta": "Scuderia Ferrari HP",
+"contenido_completo": "Próximamente más información sobre este piloto.",
+"imagen":"assets/leclerc.png"
+},
+
+{
+"id": 6,
+"name": "Lewis Hamilton",
+"descripcion_corta":"Scuderia Ferrari HP",
+"contenido_completo": "Próximamente más información sobre este piloto.",
+"imagen":"assets/lewis.png"
+},
+
+{
+"id": 7,
+"name": "Kimi Antonelli",
+"descripcion_corta": "Mercedes-AMG Petronas Formula One Team",
+"contenido_completo": "Próximamente más información sobre este piloto.",
+"imagen":"assets/antonelli.png"
+},
+
+{
+"id": 8,
+"name": "Alex Albon",
+"descripcion_corta": "Williams Racing",
+"contenido_completo": "Próximamente más información sobre este piloto.",
+"imagen":"assets/albon.png"
+}
+
+]
+}

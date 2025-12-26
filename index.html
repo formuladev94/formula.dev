@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fórmula.dev</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Aquí comienza la barra de navegación -->
+    <nav class="navbar">
+
+
+        <!-- Para el menú hamburguesa en pantallas pequeñas tipo móvil -->
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Secciónes de navegación rápida desde la barra de navegación -->
+        <div class="nav-links" id="navLinks">
+            <a href="#inicio">Home</a>
+            <a href="#pilotos">Pilotos</a>
+            <a href="#equipos">Equipos</a>
+            <a href="#calendario">Calendario</a>
+            <a href="#about">About</a>
+
+        </div>    
+    </nav>
+
+    <main class="main-content">
+        <!-- Section que contiene el carrusel-->
+        <section id="inicio" class="content-section">
+            <div class="hero-carousel">
+                <div class="carousel-slide active">
+                    <img src="assets/img1.jpg" alt="Checo Pérez y Max Verstappen.">
+                    <div class="caption">
+                        <h2>FÓRMULA.DEV</h2>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="assets/pilotos.jpeg" alt="De izquierda a derecha: Lando Norris, Max Verstappen y Oscar Piastri.">
+                    <div class="caption">
+                        <h2>SIENTE LA ADRENALINA</h2>
+                        <p class="home-subtext">Conoce a los protagonistas de la parrilla</p>
+                        <a href="#pilotos" class="btn">Explorar Pilotos</a>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="assets/A-McLaren.jpg" alt="McLaren pit stop 2024.">
+                    <div class="caption">
+                        <h2>INGENIERÍA AL LÍMITE</h2>
+                        <p class="home-subtext">Descubre las escuderías que forjan la leyenda</p>
+                        <a href="#equipos" class="btn"> Conocer Equipos</a>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="assets/circuitos.jpeg">
+                    <div class="caption">
+                        <h2>EL MUNDO ES NUESTRO CIRCUITO</h2>
+                        <p class="home-subtext">Sigue la emoción en cada rincón del planeta</p>
+                        <a href="#calendario" class="btn">Calendario</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pilotos" class="section pilotos-section">
+            <h2 class="encabezado"> PILOTOS</h2>
+             <div id="resources-container" class="cards-container">
+             </div>
+
+                <div id="resource-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <div id="modal-body">
+                        </div>
+                     </div>
+                </div>
+        </section>
+
+
+        <section id="equipos" class="content-section">
+            <h2 class="encabezado">EQUIPOS</h2>
+            <p class="description">Sección en construcción.</p>
+        </section>
+
+
+        <section id="calendario" class="content-section">
+            <h2 class="encabezado">CALENDARIO</h2>
+            <p class="description">Sección en construcción.</p>
+        </section>
+
+
+        <section id="about" class="content-section">
+            <h2 class="encabezado">SOBRE FÓRMULA.DEV</h2>
+            <p class="description">Este sitio es un proyecto de desarrollo web, que forma parte de mi portafolio.
+                Aquí les comparto mis habilidades y conocimientos en programación web a través de mi pasión por la Fórmula 1.</p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 fórmula.dev | Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

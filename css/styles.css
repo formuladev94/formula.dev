@@ -1,0 +1,401 @@
+:root{
+    --primary-color: #c6a66488;
+    --secondary-color: #c6a664;
+    --background-color: #121212;
+    --text-color: #d4d4d4;
+    --font-family: 'Arial', sans-serif;
+}
+
+body{
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height:1.6;
+    overflow-x: hidden;
+}
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    gap:30px;
+}
+
+/*Estilos de los enlaces de navegación*/
+.nav-links a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+/* Estilos al pasar el cursor por los enlaces de navegación */
+.nav-links a:hover{
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+
+/*Estilos del menú hamburguesa*/
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 20px;
+    z-index: 150;
+}
+
+.bar{
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+/*Sección del carrusel*/
+.hero-carousel{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide.active{
+    opacity: 2;
+}
+
+.carousel-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1; /*cuanto más bajo le hago más opaca se vuelven las imagenes y resalta mejor el texto*/
+    filter: brightness(0.3);
+}
+
+
+.caption{
+    position: absolute;
+    text-align: center;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    opacity: 1 !important;
+}
+
+.caption h2{
+    font-size: 5rem;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+
+.home-subtext {
+    color: var(--text-color); /* El dorado sólido */
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    transition: background-color 0.3 ease;
+    opacity: 1 !important;
+}
+
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.content-section{
+    padding-top: 0px;
+}
+
+
+.encabezado{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
+
+.description{
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: white;
+    text-align: justify;
+}
+
+
+/*ESTILOS PARA LAS TARJETAS*/
+
+.cards-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.resource-card{
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 2px 4px 8px var(--primary-color);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--text-color);
+    flex: 0 1 calc(32.222% - 40px); /* Tres tarjetas por fila con espacio */
+    max-width: calc(32.222% - 40px);
+    box-sizing: border-box;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px var(--secondary-color);
+}
+
+.resource-card img{
+    width: 85%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.resource-card h3{
+    font-size: 1.8rem;
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.resource-card p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white
+}
+
+/*Estilos del modal*/
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Un poco más oscuro para resaltar el pop-up */
+    backdrop-filter: blur(8px);
+    
+    /* CENTRADO PERFECTO */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Cuando el modal se activa desde JS, usaremos display: flex en lugar de block */
+.modal.active {
+    display: flex;
+}
+
+
+.modal-content {
+    background-color: var(--background-color);
+    padding: 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    width: 90%; /* Ancho en móviles */
+    max-width: 900px; /* Ancho máximo en PC */
+    max-height: 80vh; /* Para que no se salga de la pantalla si hay mucho texto */
+    overflow-y: auto; /* Scroll interno si es necesario */
+    box-shadow: 0 0 30px var(--secondary-color);
+    position: relative;
+    color: var(--text-color);
+    text-align: center; /* Centra el texto */
+    align-items: center; /* Centra los elementos hijos */
+    flex-direction: column;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-content h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.modal-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.modal-content img {
+    width: 90%; /* Imagen más grande y visible */
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+.close-button {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--primary-color);
+}
+
+
+
+
+.footer{
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 5px;
+    color: var(--primary-color);
+}
+
+
+
+
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px){
+    .navbar{
+        justify-content: space-between;
+    }
+
+    .menu-toggle{
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-color);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        padding: 10px 0;
+        z-index: 90;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .nav-links a{
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+        margin: 5px 0;
+        border-radius: 5px;
+    }
+
+    .caption h2{
+        font-size: 1.8em;
+        padding: 0 10px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .encabezado{
+        font-size: 2.5rem;
+    }
+
+    .description{
+        font-size: 1.2rem;
+        padding: 0 10px;
+    }
+
+}
+
+
+/* Para pantallas medianas (Tablets) */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .resource-card {
+        flex: 0 1 45%; /* Se ven 2 por línea */
+        max-width: 45%;
+    }
+}
+
+/* Para pantallas chicas (Celulares) */
+@media (max-width: 599px) {
+    .resource-card {
+        flex: 0 1 100%; /* Una sola tarjeta ancha */
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
