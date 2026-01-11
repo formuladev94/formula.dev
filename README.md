@@ -3,7 +3,7 @@
 ne permitió definir una identidad en redes sociales, mediante la creación de contenido y una página en Instagram bajo el nombre de formula.dev</p>
 
 <h3>Demo:</h3>
-<p>https://formula.dev.vercel.app/</p>
+<p>https://formuladev.vercel.app/</p>
 
 <h3>Tecnologías Utilizadas:</h3>
 <ul>HTML</ul>
