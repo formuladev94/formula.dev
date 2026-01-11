@@ -11,14 +11,14 @@
  "id": 2,
 "name": "Max Verstappen",
 "descripcion_corta": "Oracle Red Bull Racing",
-"contenido_completo": "Próximamente más información sobre este piloto.",
+"contenido_completo": "Es un piloto neerlandés de Fórmula 1, cuatro veces campeón del mundo (2021, 2022, 2023 y 2024). Actualmente tiene 28 años y pilota para el equipo Red Bull Racing, con quien tiene contrato hasta al menos finales de la temporada 2028. ",
 "imagen": "assets/max.jpg"
 },
 {
  "id": 3,
 "name": "Oscar Piastri",
 "descripcion_corta": "McLaren Formula 1 Team",
-"contenido_completo": "Próximamente más información sobre este piloto.",
+"contenido_completo": "Es un piloto australiano de Fórmula 1, actualmente compitiendo para el equipo McLaren. Debutó en la F1 en 2023 y rápidamente se destacó por su talento y consistencia en la pista.",
 "imagen": "assets/piastri.png"
 },
 
@@ -26,7 +26,7 @@
 "id": 4,
 "name": "George Russell",
 "descripcion_corta": "Mercedes-AMG Petronas Formula One Team",
-"contenido_completo": "Próximamente más información sobre este piloto.",
+"contenido_completo": "Es un piloto británico de Fórmula 1 que corre para el equipo Mercedes. A sus 27 años (nacido el 15 de febrero de 1998), ha ganado cinco Grandes Premios y ha firmado un nuevo contrato multianual con Mercedes que lo mantendrá en el equipo para la temporada 2026 y más allá.",
 "imagen":"assets/george.png"
 },
 
@@ -34,7 +34,7 @@
 "id": 5,
 "name": "Charles Leclerc",
 "descripcion_corta": "Scuderia Ferrari HP",
-"contenido_completo": "Próximamente más información sobre este piloto.",
+"contenido_completo": "Es un piloto monegasco de Fórmula 1 para la Scuderia Ferrari. Nacido el 16 de octubre de 1997, Leclerc ha demostrado ser uno de los talentos más prometedores en la F1, logrando múltiples victorias y podios desde su debut en 2018.",
 "imagen":"assets/leclerc.png"
 },
 
@@ -42,7 +42,7 @@
 "id": 6,
 "name": "Lewis Hamilton",
 "descripcion_corta":"Scuderia Ferrari HP",
-"contenido_completo": "Próximamente más información sobre este piloto.",
+"contenido_completo": "Es un piloto británico de Fórmula 1, siete veces campeón del mundo (empatado en el récord histórico con Michael Schumacher). Nacido el 7 de enero de 1985, actualmente tiene 41 años y compite para la Scuderia Ferrari, equipo al que se unió en 2025 tras una larga y exitosa etapa con Mercedes.",
 "imagen":"assets/lewis.png"
 },
 
@@ -50,7 +50,7 @@
 "id": 7,
 "name": "Kimi Antonelli",
 "descripcion_corta": "Mercedes-AMG Petronas Formula One Team",
-"contenido_completo": "Próximamente más información sobre este piloto.",
+"contenido_completo": "Es un prometedor piloto italiano de Fórmula 1 para el equipo Mercedes, a quien se unió oficialmente para la temporada 2025. Nacido el 25 de agosto de 2006, actualmente tiene 19 años y es considerado una de las mayores promesas jóvenes del automovilismo, a menudo comparado con Max Verstappen.",
 "imagen":"assets/antonelli.png"
 },
 
@@ -58,7 +58,7 @@
 "id": 8,
 "name": "Alex Albon",
 "descripcion_corta": "Williams Racing",
-"contenido_completo": "Próximamente más información sobre este piloto.",
+"contenido_completo": "Es un piloto británico-tailandés de Fórmula 1 que actualmente compite para el equipo Williams.A lo largo de su carrera en la Fórmula 1, Albon ha demostrado ser un piloto consistente, especialmente en su etapa con Williams, donde se ha consolidado como el líder del equipo. ",
 "imagen":"assets/albon.png"
 }
 
